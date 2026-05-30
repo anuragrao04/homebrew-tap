@@ -5,13 +5,13 @@
 class Aidocs < Formula
   desc "Give your agents the power to publish reviewable HTML documents"
   homepage "https://github.com/anuragrao04/aidocs"
-  version "0.0.1-alpha.15"
+  version "0.0.1-alpha.16"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/anuragrao04/aidocs/releases/download/v0.0.1-alpha.15/aidocs_0.0.1-alpha.15_darwin_amd64.tar.gz"
-      sha256 "adfbbc9ddaae7f514ed16a6fb208160b6992f3095d8feff728b0e4f7d9c7da98"
+      url "https://github.com/anuragrao04/aidocs/releases/download/v0.0.1-alpha.16/aidocs_0.0.1-alpha.16_darwin_amd64.tar.gz"
+      sha256 "f53037c0d28ac05ffaf87261aff3218eed615ed616d03d88dfead66ad12a891c"
 
       define_method(:install) do
         bin.install "aidocs"
@@ -21,8 +21,8 @@ class Aidocs < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/anuragrao04/aidocs/releases/download/v0.0.1-alpha.15/aidocs_0.0.1-alpha.15_darwin_arm64.tar.gz"
-      sha256 "9b42c24784b8092df1d66f15faad6dd4944d5f80653a19a3258ca421d08bf926"
+      url "https://github.com/anuragrao04/aidocs/releases/download/v0.0.1-alpha.16/aidocs_0.0.1-alpha.16_darwin_arm64.tar.gz"
+      sha256 "8e7fc96cae7c78c9a0eb9b942485bb7ab2c81a9b13ff9a0233081385fc2d0237"
 
       define_method(:install) do
         bin.install "aidocs"
@@ -35,8 +35,8 @@ class Aidocs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anuragrao04/aidocs/releases/download/v0.0.1-alpha.15/aidocs_0.0.1-alpha.15_linux_amd64.tar.gz"
-      sha256 "9d88cbf16c5980eaeea789aa5b4b83253757a8e5c60e58f104b901cfebe34ce0"
+      url "https://github.com/anuragrao04/aidocs/releases/download/v0.0.1-alpha.16/aidocs_0.0.1-alpha.16_linux_amd64.tar.gz"
+      sha256 "f7489a9645666e1c7d9423fde96ed95afffdf68df6858f11bad533520536caa0"
       define_method(:install) do
         bin.install "aidocs"
         bash_completion.install "completions/aidocs.bash" => "aidocs"
@@ -45,8 +45,8 @@ class Aidocs < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anuragrao04/aidocs/releases/download/v0.0.1-alpha.15/aidocs_0.0.1-alpha.15_linux_arm64.tar.gz"
-      sha256 "e3fa491a05815d6230c9ecb323c34465292abecfe9d0dffca25372c5d75e9675"
+      url "https://github.com/anuragrao04/aidocs/releases/download/v0.0.1-alpha.16/aidocs_0.0.1-alpha.16_linux_arm64.tar.gz"
+      sha256 "5e5f4824ca01006decdafc4f98d7168db2a07654889263a5e975f93cc6506325"
       define_method(:install) do
         bin.install "aidocs"
         bash_completion.install "completions/aidocs.bash" => "aidocs"
